@@ -1,8 +1,6 @@
 # wmiget
-Gets relevant system info
+Displays relevant system info in an easy-to-use winform gui
 
-Used mainly for checking spoofed values/checking for values that were left unchanged by lowend hwid spoofers
+To use, simply build the program and run the executable.
 
-either run using the provided exe or build the solution yourself with the source provided
-
-chegger#1337
+chegger#0402
