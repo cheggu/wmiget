@@ -6,4 +6,3 @@ To use, simply build the program and run the executable.
 <img src="https://i.imgur.com/zYsckSY.png" alt="Example usage">
 
 
-chegger#0402
