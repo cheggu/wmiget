@@ -487,5 +487,60 @@ namespace Hardware
         {
             this.Close();
         }
+
+        private void lbl7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbldone_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
