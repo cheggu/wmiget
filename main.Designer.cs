@@ -133,6 +133,7 @@
             this.btn_export = new System.Windows.Forms.Button();
             this.grp_export = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.grp_select_hw.SuspendLayout();
             this.grp_info.SuspendLayout();
             this.grp_export.SuspendLayout();
@@ -270,6 +271,7 @@
             // 
             // grp_info
             // 
+            this.grp_info.Controls.Add(this.hScrollBar1);
             this.grp_info.Controls.Add(this.textBox31);
             this.grp_info.Controls.Add(this.textBox32);
             this.grp_info.Controls.Add(this.textBox33);
@@ -1209,6 +1211,14 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Export to TXT if off screen:";
             // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(9, 614);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(1475, 17);
+            this.hScrollBar1.TabIndex = 91;
+            this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll_1);
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -1340,6 +1350,7 @@
         private System.Windows.Forms.Button btn_export;
         private System.Windows.Forms.GroupBox grp_export;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
     }
 }
 

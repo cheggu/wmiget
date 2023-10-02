@@ -1,0 +1,11 @@
+C:\Users\Owner\Desktop\wmiget-master\bin\Release\Hardware.exe.config
+C:\Users\Owner\Desktop\wmiget-master\bin\Release\Hardware.exe
+C:\Users\Owner\Desktop\wmiget-master\bin\Release\Hardware.pdb
+C:\Users\Owner\Desktop\wmiget-master\obj\Release\Hardware.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\wmiget-master\obj\Release\Hardware.frm_splash.resources
+C:\Users\Owner\Desktop\wmiget-master\obj\Release\Hardware.frm_main.resources
+C:\Users\Owner\Desktop\wmiget-master\obj\Release\Hardware.Properties.Resources.resources
+C:\Users\Owner\Desktop\wmiget-master\obj\Release\Hardware.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\wmiget-master\obj\Release\Hardware.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\wmiget-master\obj\Release\Hardware.exe
+C:\Users\Owner\Desktop\wmiget-master\obj\Release\Hardware.pdb
