@@ -36,7 +36,7 @@ namespace Hardware
             if (s.isLoaded == true)
             {
                 this.Enabled = true;
-                
+
             }
             else
             {
@@ -214,6 +214,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.CPU);
             PopulateCaption(s.cpudesc);
+            hScrollBar1.Show();
             PAGE = 1;
             grp_info.Text = "System Information";
         }
@@ -223,6 +224,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.RAM);
             PopulateCaption(s.ramdesc);
+            hScrollBar1.Show();
             PAGE = 2;
             grp_info.Text = "System Information";
         }
@@ -232,6 +234,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.HDD);
             PopulateCaption(s.hdddesc);
+            hScrollBar1.Show();
             PAGE = 3;
             grp_info.Text = "System Information";
         }
@@ -241,6 +244,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.SSD);
             PopulateCaption(s.ssddesc);
+            hScrollBar1.Show();
             PAGE = 4;
             grp_info.Text = "System Information";
         }
@@ -250,6 +254,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.GPU);
             PopulateCaption(s.gpudesc);
+            hScrollBar1.Show();
             PAGE = 5;
             grp_info.Text = "System Information";
         }
@@ -259,6 +264,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.MB);
             PopulateCaption(s.mbdesc);
+            hScrollBar1.Show();
             PAGE = 6;
             grp_info.Text = "System Information";
         }
@@ -268,6 +274,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.NETADAPT);
             PopulateCaption(s.netadaptdesc);
+            hScrollBar1.Show();
             PAGE = 7;
             grp_info.Text = "System Information  |  You may need to export to see all results";
         }
@@ -277,6 +284,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.MONITOR);
             PopulateCaption(s.monitordesc);
+            hScrollBar1.Show();
             PAGE = 8;
             grp_info.Text = "System Information  |  This may not show accurate results";
         }
@@ -286,6 +294,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.BIOS);
             PopulateCaption(s.biosdesc);
+            hScrollBar1.Show();
             PAGE = 9;
             grp_info.Text = "System Information";
         }
@@ -295,6 +304,7 @@ namespace Hardware
             ClearAllControls();
             PopulateText(s.OS);
             PopulateCaption(s.osdesc);
+            hScrollBar1.Show();
             PAGE = 10;
             grp_info.Text = "System Information";
         }
@@ -381,6 +391,23 @@ namespace Hardware
         private void btn_export_Click(object sender, EventArgs e)
         {
             Export(PAGE);
+        }
+
+        public int last_scroll_location;
+
+        private void hScrollBar1_Scroll_1(object sender, ScrollEventArgs e)
+        {
+            foreach (Control ctrl in CONTROLS)
+            {
+                ctrl.Location = new Point(ctrl.Location.X + ((last_scroll_location - hScrollBar1.Value) * 3), ctrl.Location.Y);
+            }
+
+            foreach (Control ctrl in CAPTIONS)
+            {
+                ctrl.Location = new Point(ctrl.Location.X + ((last_scroll_location - hScrollBar1.Value) * 3), ctrl.Location.Y);
+            }
+
+            last_scroll_location = hScrollBar1.Value;
         }
     }
 }
